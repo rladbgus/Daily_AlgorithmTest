@@ -21,3 +21,9 @@ asyncMap(
   }
 );
 
+const asyncMap = function (tasks, callback) {
+  //promose all로 비동기 처리하기
+  tasks = tasks.map(cb => new Promise(cb))
+  return Promise.all(tasks)
+    .then(callback);
+};

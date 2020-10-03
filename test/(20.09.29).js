@@ -1,4 +1,5 @@
 /* evenOccurrence
+
 배열이 주어졌을 때, 값이 같은 원소가 짝수 개수만큼 나오는 첫 번째 원소를 리턴하세요.
 개수가 짝수인 원소들이 여러 개면, 그 중 첫 번째 원소를 리턴하세요.
 개수가 짝수인 원소가 없으면, null을 리턴하세요.
@@ -61,5 +62,3 @@ const evenOccurrence = function (arr) {
   }
   return null; 
 } 
-
-
