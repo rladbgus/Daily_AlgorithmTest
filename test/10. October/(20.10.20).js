@@ -33,12 +33,12 @@ function solution(people, limit) {
 //위의 코드가 런타임 에러가 떠서 새로운 로직으로!
 function solution(people, limit) {
   people.sort((a, b) => {return a-b});
-  for(var i=0, j=people.length-1; i < j; j--) {
-      if( people[i] + people[j] <= limit ) i++;
+  for(var i=0, last=people.length-1; i < last; last--) {
+      if( people[i] + people[last] <= limit ) 
+          i++;
   }    
   return people.length-i;
 }
-
 
 /*  1. 자연수 뒤집어 배열로 만들기
 
