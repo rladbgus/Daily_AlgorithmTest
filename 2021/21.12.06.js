@@ -8,7 +8,7 @@
 function solution(numbers) {
     // 1~10까지 더한 값
     const totalSum = 45;
-    let answer = totalSum - numbers.reduce((cur, acc) => cur+acc, 0);
+    let answer = totalSum - numbers.reduce((acc, cur) => acc+cur, 0);
     return answer;
 }
 
@@ -16,9 +16,10 @@ function solution(numbers) {
 function solution(numbers){
     let answer = 0;
     for (let i=0; i<10; i++){
-        if(numbers.includes(i)){
+        if(!numbers.includes(i)){
             answer += i;
         }
     }
     return answer;
 }
+
