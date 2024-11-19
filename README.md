@@ -1,3 +1,3 @@
-# Daily_AlgorithmTest
+# Daily_Algorithm
 
-[펜슬 이모지] :pencil2:
+:pencil2:
